@@ -26,7 +26,7 @@ document.getElementById('messageForm').addEventListener('submit', async function
     statusDiv.textContent = '';
     
     try {
-        const response = await fetch('https://trigger.macrodroid.com/834a628e-a605-4607-8ecf-d36b504db193/multi?MultiLinkSend=' + encodeURIComponent(message));
+        const response = await fetch('https://trigger.macrodroid.com/834a628e-a605-4607-8ecf-d36b504db193/multi?multiIn=' + encodeURIComponent(message));
         
         if (response.ok) {
             statusDiv.textContent = '🎉 Link shared successfully!';

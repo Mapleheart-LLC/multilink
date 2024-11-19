@@ -39,18 +39,88 @@ body {
 header {
     text-align: center;
     margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    background: linear-gradient(145deg, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+    border-radius: 20px;
+}
+
+.header-content {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, var(--text-primary), var(--accent-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .subtitle {
     color: var(--text-secondary);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.project-byline {
+    color: var(--text-accent);
     font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.project-byline a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-byline a:hover {
+    color: var(--accent-hover);
+}
+
+@media (min-width: 768px) {
+    .project-byline {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 2.5rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .project-byline {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
 }
 
 .card {
@@ -241,8 +311,6 @@ button:active {
         padding: 1rem;
     }
 }
-
-/* Add these styles to your existing CSS */
 
 .support-link {
     text-align: center;

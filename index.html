@@ -9,10 +9,10 @@
 <body>
     <div class="page-wrapper">
         <div class="container">
-            <header>
+            <div>
                 <h1>Link Share Network</h1>
                 <p class="subtitle">A community-driven link sharing platform</p>
-            </header>
+            </div>
 
             <div class="card">
                 <div class="explanation">
@@ -43,19 +43,22 @@
                 <form id="messageForm" class="share-form">
                     <div class="form-group">
                         <label for="message">Share a link:</label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            placeholder="Paste your link here... (Press Enter to submit, Esc to clear)"
-                            required
-                        ></textarea>
+                        <textarea id="message" placeholder="Paste your link here..."></textarea>
                     </div>
                     <button type="submit">Share with Network</button>
                 </form>
+
                 <div id="status" class="status"></div>
+
+                <div class="support-link">
+                    <a href="https://ko-fi.com/cypheris" target="_blank" class="kofi-button">
+                        <span class="kofi-icon">☕</span>
+                        <span class="kofi-text">Support on Ko-fi</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

@@ -241,3 +241,44 @@ button:active {
         padding: 1rem;
     }
 }
+
+/* Add these styles to your existing CSS */
+
+.support-link {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.kofi-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--accent-primary);
+    border-radius: 8px;
+    color: var(--text-accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.kofi-button:hover {
+    background: var(--accent-primary);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.kofi-button:active {
+    transform: translateY(0);
+}
+
+.kofi-icon {
+    font-size: 1.1rem;
+}
+
+.kofi-text {
+    font-weight: 500;
+}

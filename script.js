@@ -1,5 +1,5 @@
 // Configuration
-const API_BASE_URL = 'http://15.204.232.236:5000'; // Replace with your actual API base URL
+const API_BASE_URL = 'https://api.mapleheart.org'; // Replace with your actual API base URL
 const selectedTags = new Set();
 
 // Utility function to validate URLs

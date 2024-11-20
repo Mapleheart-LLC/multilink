@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update fetchAllTags to use local showStatus
     async function fetchAllTags() {
         try {
-            const response = await fetch('http://15.204.232.236:5000/tags');
+            const response = await fetch('https://api.mapleheart.org/tags');
             const data = await response.json();
             return data.tags.sort();
         } catch (error) {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Update addTagToAPI to use local showStatus
     async function addTagToAPI(tagName) {
         try {
-            const response = await fetch('http://15.204.232.236:5000/tags', {
+            const response = await fetch('https://api.mapleheart.org/tags', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         try {
-            const response = await fetch('http://15.204.232.236:5000/webhooks', {
+            const response = await fetch('https://api.mapleheart.org/webhooks', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

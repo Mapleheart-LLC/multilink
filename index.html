@@ -9,54 +9,87 @@
 <body>
     <div class="page-wrapper">
         <div class="container">
-            <div>
-                <h1>Link Share Network</h1>
-                <p class="subtitle">A community-driven link sharing platform</p>
-                <p class="project-byline">A <a href="https://cypheris.app" target="_blank">Cypheris</a> project</p>
-            </div>
+            <header>
+                <div class="header-content">
+                    <h1>Link Share Network</h1>
+                    <p class="subtitle">A community-driven link sharing platform</p>
+                    <div class="project-byline">
+                        <span>A <a href="https://cypheris.app" target="_blank">Cypheris</a> project</span>
+                    </div>
+                </div>
+            </header>
 
             <div class="card">
                 <div class="explanation">
                     <h2>How it works</h2>
-                    
                     <div class="step">
-                        <span class="step-number">1</span>
+                        <div class="step-number">1</div>
                         <p>Found something interesting online? Simply paste the link in the text box below.</p>
                     </div>
-
                     <div class="step">
-                        <span class="step-number">2</span>
-                        <p>Hit submit, and your link will be instantly opened on everyone's phone in the network.</p>
+                        <div class="step-number">2</div>
+                        <p>Hit submit, and your link will be instantly opened on everyone's device in the network.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>In return, you'll receive interesting links from other members of the community.</p>
                     </div>
 
-                    <div class="step">
-                        <span class="step-number">3</span>
-                        <p>In return, you'll receive interesting links from other members of the community.</p>
+                    <div class="network-stats">
+                        <h3>Network Status</h3>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-label">PCs:</span>
+                                <span id="pc-count" class="stat-value">-</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Phones:</span>
+                                <span id="phone-count" class="stat-value">-</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="join-info">
                         <h3>Want to join?</h3>
-                        <p>Send a DM to <a href="https://twitter.com/lilmapletini" target="_blank">@lilmapletini</a> on Twitter or Discord to get access.</p>
-                        <p class="note">You don't need to be a member to share links!</p>
+                        <p>Head on over to <a href="/join.html" target="_blank">here</a> and join the network.</p>
                     </div>
                 </div>
 
                 <form id="messageForm" class="share-form">
+                    <!-- URL Input -->
                     <div class="form-group">
                         <label for="message">Share a link:</label>
-                        <textarea id="message" placeholder="Paste your link here..."></textarea>
+                        <textarea id="message" required></textarea>
                     </div>
+
+                    <!-- Tag Selector -->
+                    <div class="form-group">
+                        <label for="tagSearch">Tags:</label>
+                        <div class="tag-selector">
+                            <input 
+                                type="text" 
+                                id="tagSearch" 
+                                placeholder="Search or add tags..."
+                                autocomplete="off"
+                                class="tag-search-input"
+                                required
+                            >
+                            <div id="tagDropdown" class="tag-dropdown"></div>
+                            <div id="selectedTags" class="selected-tags"></div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button & Status -->
                     <button type="submit">Share with Network</button>
+                    <div id="status"></div>
                 </form>
+            </div>
 
-                <div id="status" class="status"></div>
-
-                <div class="support-link">
-                    <a href="https://ko-fi.com/cypheris" target="_blank" class="kofi-button">
-                        <span class="kofi-icon">☕</span>
-                        <span class="kofi-text">Support on Ko-fi</span>
-                    </a>
-                </div>
+            <div class="support-link">
+                <a href="https://ko-fi.com/cypheris" class="kofi-button" target="_blank">
+                    <span class="kofi-icon">☕</span>
+                    <span class="kofi-text">Support on Ko-fi</span>
+                </a>
             </div>
         </div>
     </div>

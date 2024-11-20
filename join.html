@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assimilate | Link Share Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <header>
+                <div class="header-content">
+                    <h1>Join the Network</h1>
+                    <p class="subtitle">Join Us and Share</p>
+                </div>
+            </header>
+
+            <div class="card">
+                <form id="webhookForm" class="share-form">
+                    <div class="form-group">
+                        <label for="webhookUrl">Webhook URL</label>
+                        <textarea 
+                            id="webhookUrl" 
+                            name="webhookUrl" 
+                            placeholder="Enter your webhook URL (e.g., https://example.com/webhook)" 
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tagSearch">Select the content you'd like to receive</label>
+                        <div class="tag-selector">
+                            <input 
+                                type="text" 
+                                id="tagSearch" 
+                                placeholder="Search tags..."
+                                autocomplete="off"
+                                required
+                            >
+                            <div id="tagDropdown" class="tag-dropdown"></div>
+                            <div id="selectedTags" class="selected-tags"></div>
+                        </div>
+                    </div>
+
+                    <div id="status" class="status"></div>
+
+                    <button type="submit">Register Webhook</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h2>Phones</h2>
+                <p>
+                    Download and install MacroDroid on your Android device. </br>
+                    Then import the following macro to obtain your webhook URL. </br> </br>
+                    <a class="jLink" href="https://mega.nz/file/xcIxCCyI#9_SJB7QS5vEn53_GbbGDI_jmIoHNyAjkgPy9HwROYh8">Click Here to Download</a>
+                </p></br>
+
+                <h2>Computers</h2>
+                 <p>
+                    Install the <i><a class="jLink"href="https://mega.nz/folder/JRQwRQJK#7eWFeFMeGI7UbpUYYcDw5A">Cypheris LinkNet</a></i> Software  </br>
+                    Then run it. </br>
+                    It takes care of the rest of the work.  </br></br>
+                    <a class="jLink" href="https://mega.nz/folder/JRQwRQJK#7eWFeFMeGI7UbpUYYcDw5A">Click Here to Download</a>
+                  </p></br>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="join.js"></script>
+</body>
+</html>

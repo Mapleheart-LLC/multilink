@@ -27,8 +27,8 @@ async function fetchNetworkStats() {
     } catch (error) {
         console.error('Error fetching network stats:', error);
         // Fallback to show 0 or '-'
-        document.getElementById('pc-count').textContent = '-';
-        document.getElementById('phone-count').textContent = '-';
+        document.getElementById('pc-count').textContent = 'Server';
+        document.getElementById('phone-count').textContent = 'Down';
     }
 }
 
